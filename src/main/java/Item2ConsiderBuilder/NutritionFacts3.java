@@ -1,4 +1,4 @@
-package Item2ConsiderBulider;
+package Item2ConsiderBuilder;
 //The third : Builder pattern
 //the builder is typically a static member class of the class it builds.
 /**
@@ -27,6 +27,36 @@ public class NutritionFacts3 {
             this.servingSize = servingSize;
             this.servings = servings;
         }
-        public Bu
+        public Builder calories(int val){
+            calories = val;
+            return this;
+        }
+        public Builder fat(int val){
+            fat = val;
+            return this;
+        }
+        public Builder sodium(int val){
+            sodium = val;
+            return this;
+        }
+        public Builder carbohydrate(int val){
+            carbohydrate = val;
+            return this;
+        }
+        public NutritionFacts3 build(){
+            return new NutritionFacts3(this);
+        }
+    }
+    public NutritionFacts3(Builder builder){
+        servingSize = builder.servingSize;
+        servings = builder.servings;
+        calories = builder.calories;
+        fat = builder.fat;
+        sodium = builder.sodium;
+        carbohydrate = builder.carbohydrate;
+    }
+    public static void main(String[] args){
+        NutritionFacts3 nutritionFacts3  = new NutritionFacts3.Builder(2,12)
+                .calories(100).sodium(35).carbohydrate(27).build();
     }
 }
