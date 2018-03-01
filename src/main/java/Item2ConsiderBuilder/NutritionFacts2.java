@@ -1,4 +1,4 @@
-package Item2ConsiderBulider;
+package Item2ConsiderBuilder;
 //The second : JavaBeans pattern
 //Because construction is split across multiple calls,a JavaBean may be
 //in an inconsistent state partway through its construction.
