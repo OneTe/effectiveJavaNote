@@ -1,0 +1,15 @@
+Conclusion
+All classes that implement Cloneable should override clone
+clone() method should first call super.clone and then fix any fields that need to be fixed
+Do not make any interface which extends cloneable
+Do not implement cloneable for any classe designed for inheritance
+
+
+Alternatives
+
+Copy constructor
+   public Yum(Yum yum);
+Copy factory
+   public static Yum newInstance(Yum yum);
+
+https://www.jianshu.com/p/2b1d4783caaf
