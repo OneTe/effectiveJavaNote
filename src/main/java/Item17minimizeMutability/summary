@@ -1,0 +1,33 @@
+Immutable Class?
+    An immutable class is simply a class whose instances cannot be modified
+Immutable class examples
+    1.String
+    2.Boxed primitive classes
+    3.BigInteger and BigDecimal
+Advantage of immutable classes
+    Easier to design, implement, and use
+    Less prone to error and are more secure
+Rules to follow to make immutable classes
+    1.Don’t provide any methods that modify the object’s state
+    2.Ensure that the class can’t be extended
+    3.Make all fields final
+    4.Make all fields private
+    5.Ensure exclusive access to any mutable components
+
+Advantages of immutable objects
+    1.Immutable objects are simple
+    2.Immutable objects are inherently thread-safe; they require no synchronization
+    3.Immutable objects can be shared freely
+        public static final Complex ZERO = new Complex(0, 0);
+        public static final Complex ONE  = new Complex(1, 0);
+        public static final Complex I    = new Complex(0, 1);
+     (This approach can be taken one step further. An immutable class can provide
+      static factories (Item 1) that cache frequently requested instances to avoid
+      creating new instances when existing ones would do. All the boxed primitive
+      classes and BigInteger do this. Using such static factories causes clients
+      to share instances instead of creating new ones, reducing memory footprint
+      and garbage collection costs)
+
+    4.Not only can you share immutable objects, but you can share their internals
+    5.Immutable objects make great building blocks for other objects (i.e. map, set)
+    6.The only real disadvantage of immutable classes is that they require a separate object for each distinct value
