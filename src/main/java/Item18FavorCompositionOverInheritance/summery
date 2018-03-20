@@ -1,0 +1,4 @@
+use composition and forwarding instead of inheritance, especially
+if an appropriate interface to implement a wrapper class exists.
+Not only are wrapper classes more robust than subclasses, they are
+also more powerful.
