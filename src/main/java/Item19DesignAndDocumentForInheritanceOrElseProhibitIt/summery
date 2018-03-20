@@ -1,0 +1,6 @@
+1.Class must document its self-use of overridable methods
+2.Class may have to provide hooks into its internal workings in the form of judi- ciously chosen protected methods
+3.The only way to test a class designed for inheritance is to write subclasses
+4.Constructors must not invoke overridable methods
+5.Neither clone nor readObject may invoke an overridable method, directly or indirectly
+6.prohibit subclassing in classes that are not designed and documented to be safely subclassed
