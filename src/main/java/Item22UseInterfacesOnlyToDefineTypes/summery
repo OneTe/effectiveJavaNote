@@ -1,0 +1,2 @@
+interfaces should be used only to define types.
+They should not be used merely to export constants.
