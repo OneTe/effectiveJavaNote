@@ -1,0 +1,11 @@
+
+1.Unchecked warnings while using generic
+    unchecked cast warnings
+    unchecked method invocation warnings
+    unchecked generic array creation warnings
+    unchecked conversion warnings
+
+2.@SuppressWarnings("unchecked") annotation
+    If you can’t eliminate a warning, and you can prove that the code that provoked the warning is type-safe
+    Always use the SuppressWarnings annotation on the smallest scope possible
+    Every time you use an @SuppressWarnings("unchecked") annotation, add a comment saying why it’s safe to do so
