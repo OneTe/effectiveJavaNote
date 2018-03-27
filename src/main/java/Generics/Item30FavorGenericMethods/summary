@@ -1,0 +1,9 @@
+Static utility methods are particularly good candidates for generification
+All of the “algorithm” methods in Collections (such as binarySearch and sort) have been generified
+
+In summary, generic methods, like generic types, are safer and easier to use
+than methods requiring their clients to put explicit casts on input parameters
+and return values. Like types, you should make sure that your methods can be used
+without casts, which often means making them generic. And like types, you should
+generify existing methods whose use requires casts. This makes life easier for new
+users without breaking existing clients (Item 26).
