@@ -1,0 +1,2 @@
+Use enums any time you need a set of constants whose members
+are known at compile time.
