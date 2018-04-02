@@ -1,0 +1,3 @@
+The ordinal() method  is designed for use by general-purpose enum-based data structures such
+as EnumSet and EnumMap.
+Unless you are writing code with this character, you are best off avoiding the ordinalmethod entirely.
