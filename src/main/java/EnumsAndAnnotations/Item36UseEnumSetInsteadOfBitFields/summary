@@ -1,0 +1,4 @@
+1.This class implements the Set interface, providing all of the richness, type safety,
+  and interoperability you get with any other Set implementation.
+2.The EnumSet class combines the conciseness and performance of bit fields
+3.All the many advantages of enum types
