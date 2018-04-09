@@ -1,0 +1,7 @@
+1.You should use the @Override annotation on every method declaration that
+  you believe to override a superclass declaration.
+2.the compiler can protect you from a great many errors if you use the Override
+  annotation on every method declaration that you believe to override a supertype
+  declaration, with one exception.
+3.In concrete classes, you need not annotate methods that you believe to override
+  abstract method declarations (though it is not harmful to do so).
