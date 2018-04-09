@@ -1,0 +1,6 @@
+1.You must use an annotation if the marker applies to any program element other than a class or interface
+2.If you want to define a type that does not have any new methods associated with it, a marker interface
+  is the way to go.
+3.If you want to mark program elements other than classes and interfaces, to allow for the possibility of
+  adding more information to the marker in the future, or to fit the marker into a framework that already
+  makes heavy use of annotation types, then a marker annotation is the correct choice.
