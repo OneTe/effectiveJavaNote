@@ -1,0 +1,5 @@
+1.Omit the types of all lambda  parameters unless their presence makes your program clearer.
+2.lambdas lack names and documentation; if a computation isn’t self-explanatory, or exceeds
+  a few lines, don’t put it in a lambda.
+3.Lambdas are limited to functional interfaces. If you want to create an instance of an abstract
+  class, you can do it with an anonymous class, but not a lambda
