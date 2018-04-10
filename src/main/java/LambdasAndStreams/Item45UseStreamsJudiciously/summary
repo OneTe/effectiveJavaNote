@@ -1,0 +1,5 @@
+In summary, some tasks are best accomplished with streams, and others with iteration.
+Many tasks are best accomplished by combining the two approaches. There are no hard and
+fast rules for choosing which approach to use for a task, but there are some useful heuristics.
+In many cases, it will be clear which approach to use; in some cases, it won’t. If you’re not
+sure whether a task is better served by streams or iteration, try both and see which works better.
