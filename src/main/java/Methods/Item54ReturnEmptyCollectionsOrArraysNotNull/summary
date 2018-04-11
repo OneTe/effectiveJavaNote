@@ -1,0 +1,3 @@
+In summary, never return null in place of an empty array or collection.
+It makes your API more difficult to use and more prone to error, and it
+has no performance advantages.
