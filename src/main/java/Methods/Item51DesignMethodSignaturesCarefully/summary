@@ -1,0 +1,9 @@
+1.Choose method names carefully
+2.Don’t go overboard in providing convenience methods
+3.Avoid long parameter lists
+    Break the method up into multiple methods
+    Create helper classes to hold groups of parameters
+    Combines aspects of the first two is to adapt the Builder pattern
+4.For parameter types, favor interfaces over classes
+5.Prefer two-element enum types to boolean parameters
+    public enum TemperatureScale { FAHRENHEIT, CELSIUS }
