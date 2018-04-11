@@ -6,16 +6,18 @@ import java.util.Objects;
 /**
  * Created by wangcheng  on 2018/4/11.
  */
-/*
- * Returns a BigInteger whose value is (this mod m).This method
- * differs from the remainder method in that it always returns a
- * non-negative BigInteger.
- *
- * @param m the modulus,which must be positive
- * @return this mod m
- * @throws ArithmeticException if m is less than or equal to 0
- */
+
+
 public class ShowRestrictions {
+    /**
+     * Returns a BigInteger whose value is (this mod m).This method
+     * differs from the remainder method in that it always returns a
+     * non-negative BigInteger.
+     *
+     * @param m the modulus,which must be positive
+     * @return this mod m
+     * @throws ArithmeticException if m is less than or equal to 0
+     */
     public static BigInteger mod(BigInteger m){
         if(m.signum() <= 0){
             throw new ArithmeticException("Modulus <= 0:" + m);
