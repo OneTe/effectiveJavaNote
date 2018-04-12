@@ -1,0 +1,4 @@
+To summarize, documentation comments are the best, most effective way to document your API.
+Their use should be considered mandatory for all exported API elements. Adopt a consistent
+style that adheres to standard conventions. Remember that arbitrary HTML is permissible in
+documentation comments and that HTML metacharacters must be escaped.
