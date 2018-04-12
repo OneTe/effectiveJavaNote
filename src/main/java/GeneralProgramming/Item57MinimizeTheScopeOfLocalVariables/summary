@@ -1,0 +1,5 @@
+1.The most powerful technique for minimizing the scope of a local variable
+  is to declare it where it is first used
+2.Nearly every local variable declaration should contain an initializer
+3.Loops present a special opportunity to minimize the scope of variables (prefer for loops to while loops)
+4.Keep methods small and focused
