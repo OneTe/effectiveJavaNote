@@ -1,0 +1,20 @@
+1.Not all return types benefit from the optional treatment. Container types,
+  including collections, maps, streams, arrays, and optionals should not be
+  wrapped in optionals
+2.you should declare a method to return Optional<T> if it might not be able
+  to return a result and clients will have to perform special processing if
+  no result is returned.
+3.An Optional is an object that has to be allocated and initialized, and reading
+  the value out of the optional requires an extra indirection. This makes optionals
+  inappropriate for use in some performance-critical situations
+4.you should never return an optional of a boxed primitive type
+5.More generally, it is almost never appropriate to use an optional as a key, value,
+  or element in a collection or array.
+
+
+In summary, if you find yourself writing a method that can’t always return a value and
+you believe it is important that users of the method consider this possibility every time
+they call it, then you should probably return an optional. You should, however, be aware
+that there are real performance consequences associated with returning optionals; for
+performance-critical methods, it may be better to return a null or throw an exception.
+Finally, you should rarely use an optional in any other capacity than as a return value.
