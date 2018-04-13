@@ -1,0 +1,5 @@
+To summarize, avoid the natural tendency to represent objects as strings
+when better data types exist or can be written. Used inappropriately, strings
+are more cumbersome, less flexible, slower, and more error-prone than other types.
+Types for which strings are commonly misused include primitive types, enums, and
+aggregate types.
