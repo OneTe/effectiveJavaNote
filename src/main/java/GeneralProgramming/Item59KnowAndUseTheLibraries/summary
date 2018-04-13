@@ -1,0 +1,11 @@
+1.By using a standard library, you take advantage of the knowledge of the experts
+  who wrote it and the experience of those who used it before you
+2.You don’t have to waste your time writing ad hoc solutions to problems that are
+  only marginally related to your work
+3.Their performance tends to improve over time, with no effort on your part
+4.Libraries also tend to gain new functionality over time
+5.You place your code in the mainstream
+6.every programmer should be familiar with the basics of java.lang, java.util, and java.io, and their
+  subpackages.
+7. If you can’t find what you need in Java platform libraries, your next choice should be to look in
+  high-quality third-party libraries, such as Google’s excellent, open source Guava library [Guava]
