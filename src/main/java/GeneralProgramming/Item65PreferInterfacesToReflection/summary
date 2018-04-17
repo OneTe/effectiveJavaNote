@@ -1,0 +1,12 @@
+Defects of reflection
+1.You lose all the benefits of compile-time type checking
+2.The code required to perform reflective access is clumsy and verbose
+3.Performance suffers
+
+
+
+In summary, reflection is a powerful facility that is required for certain sophisticated
+system programming tasks, but it has many disadvantages. If you are writing a program that
+has to work with classes unknown at compile time, you should, if at all possible, use
+reflection only to instantiate objects, and access the objects using some interface or
+superclass that is known at compile time.
