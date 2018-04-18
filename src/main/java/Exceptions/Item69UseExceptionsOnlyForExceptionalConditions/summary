@@ -1,0 +1,42 @@
+1.Exceptions are, as their name implies, to be used only for exceptional
+  conditions; they should never be used for ordi- nary control flow
+2.A well-designed API must not force its clients to use exceptions for ordinary control flow
+Example #1
+
+ // Horrible abuse of exceptions. Don't ever do this!
+try {
+   int i = 0;
+   while(true)
+      range[i++].climb();
+} catch(ArrayIndexOutOfBoundsException e) {
+}
+
+for (Mountain m : range)
+   m.climb();
+
+3.Because exceptions are designed for exceptional circumstances, there is little incentive
+  for JVM implementors to make them as fast as explicit tests.
+4.Placing code inside a try-catch block inhibits certain optimizations that JVM implementations
+  might otherwise perform
+5.The standard idiom for looping through an array doesn’t necessarily result in redundant checks.
+  Modern JVM implementations optimize them away.
+
+Example #2
+
+// Do not use this hideous code for iteration over a collection!
+try {
+   Iterator<Foo> i = collection.iterator();
+   while(true) {
+      Foo foo = i.next();
+      ...
+   }
+} catch (NoSuchElementException e) {
+}
+
+for (Iterator<Foo> i = collection.iterator(); i.hasNext(); ) {
+   Foo foo = i.next();
+   ...
+}
+
+In summary, exceptions are designed for exceptional conditions. Don’t use them for ordinary control
+flow, and don’t write APIs that force others to do so.
